@@ -1,13 +1,13 @@
 
-# 🏗️ Prompt-Driven Development (PDD) Workflow for Brownfield Projects
+# Prompt-Driven Development (PDD) Workflow for Brownfield Projects
 
 This workflow is tailored for enhancing or refactoring **existing software systems**, such as modernizing a monolith, modularizing features, or migrating to microservices. It assumes the LLM has visibility into project structure via tools like GitHub Copilot Agent or Cursor.
 
 ---
 
-## 🔹 TIER 1: System Understanding & Modernization Goals
+## TIER 1: System Understanding & Modernization Goals
 
-### ✅ PROMPT #1: Project Audit & Modernization Intent
+### PROMPT #1: Project Audit & Modernization Intent
 ```
 Let’s start by understanding the existing system and your modernization goals.
 
@@ -23,7 +23,7 @@ The project is: <INSERT CONTEXT>
 
 ---
 
-### ✅ PROMPT #2: Generate Target-State Product Spec
+### PROMPT #2: Generate Target-State Product Spec
 ```
 Now that we’ve defined the modernization goals, can you draft a high-level product requirements specification for the **modernized system**?
 
@@ -37,11 +37,11 @@ Include:
 
 ---
 
-## 🔹 TIER 2: Domain or Component-Level Deep Dive
+## TIER 2: Domain or Component-Level Deep Dive
 
 This layer zooms into specific code-bound units (e.g., a data domain, API, or business module) and helps redefine them as services or isolated components.
 
-### 🧩 COMPONENT CONVERSION PROMPT
+### COMPONENT CONVERSION PROMPT
 ```
 We are focused on transforming the component/domain: <COMPONENT_NAME>
 
@@ -57,7 +57,7 @@ End with a developer-ready spec to extract and modernize this component.
 
 ---
 
-### ✅ PROMPT #2 (Per Component): Output Service Specification
+### PROMPT #2 (Per Component): Output Service Specification
 ```
 Based on our deep dive, can you generate a complete specification for turning <COMPONENT_NAME> into a standalone microservice or module?
 
@@ -73,11 +73,11 @@ Include:
 
 ---
 
-## 🔹 TIER 3: Migration Planning & Prompt Blueprinting
+## TIER 3: Migration Planning & Prompt Blueprinting
 
 Break the modernization effort into safe, iterative, testable migration tasks. Feed the service/component specs into this tier.
 
-### ✅ TDD PLANNING PROMPT (Refactor-Aware)
+### TDD PLANNING PROMPT (Refactor-Aware)
 ```
 Draft a detailed blueprint for refactoring this project in a test-safe, incremental manner. Then break it down into small, dependency-aware tasks that can be done step by step.
 
@@ -92,7 +92,7 @@ Use markdown. Tag each prompt with code tags.
 
 ---
 
-### ✅ NON-TDD PLANNING PROMPT
+### NON-TDD PLANNING PROMPT
 ```
 Draft a blueprint for implementing this migration. Break it down into isolated tasks with a clear before/after state, including prompts to assist an LLM in making these changes.
 
@@ -101,7 +101,7 @@ Prioritize safety, gradual rollout, and stakeholder visibility. Use markdown. Ta
 
 ---
 
-## ✅ Summary of Workflow
+## Summary of Workflow
 
 1. **TIER 1** – Understand the current system and define modernization goals
 2. **TIER 2** – Explore each domain/component to extract detailed microservice specs

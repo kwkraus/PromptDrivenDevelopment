@@ -1,5 +1,5 @@
 
-# 📐 Prompt-Driven Development (PDD) Workflow for Greenfield Projects
+# Prompt-Driven Development (PDD) Workflow for Greenfield Projects
 
 This structured 3-tiered system helps you scale prompt-driven ideation and implementation across small and large feature sets. Use this to generate comprehensive specifications and prompt blueprints ready for developers or LLMs.
 
