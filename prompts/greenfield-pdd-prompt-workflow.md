@@ -8,6 +8,9 @@ This structured 3-tiered system helps you scale prompt-driven ideation and imple
 ## TIER 1: Product-Level Ideation
 
 ### PROMPT #1: Initial Brainstorming
+
+Chat with your LLM of preference and hone your idea using the latest version.  OpenAI:gpt-4.1  Anthropic:claude-sonnet-4
+
 ```
 Ask me one question at a time so we can develop a thorough, step-by-step spec for this idea. Each question should build on my previous answers, and our end goal is to have a detailed specification I can hand off to a developer. Let’s do this iteratively and dig into every relevant detail. Remember, only one question at a time. Here’s the idea: 
 
@@ -17,6 +20,9 @@ Ask me one question at a time so we can develop a thorough, step-by-step spec fo
 ---
 
 ### PROMPT #2: Compile Developer-Ready Product Spec
+
+Use your preferred reasoning model to generate the spec.  OpenAI: o3
+
 ```
 Now that we’ve wrapped up the brainstorming process, can you compile our findings into a comprehensive, developer-ready specification? Include all relevant requirements, architecture choices, data handling details, error handling strategies, and a testing plan so a developer can immediately begin implementation.
 ```
@@ -28,6 +34,9 @@ Now that we’ve wrapped up the brainstorming process, can you compile our findi
 Use this tier to explore **each feature from Tier 1** in depth. Repeat this process for each one.
 
 ### FEATURE DEEP DIVE PROMPT
+
+Use the gpt-41 to chat
+
 ```
 We are now focusing on a core feature: <FEATURE_NAME>
 
@@ -45,6 +54,9 @@ At the end, summarize everything in a final developer-ready feature spec.
 ---
 
 ### PROMPT #2 (Per Feature): Compile Feature Spec
+
+Use reasoning model to generate spec
+
 ```
 Now that we’ve explored this feature in detail, can you compile a comprehensive, developer-ready spec for just this feature?
 ```
